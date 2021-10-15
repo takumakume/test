@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-15T03:12:18.620Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="iDckLr3nit4e0K1Zl-IU" version="15.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-15T03:17:19.677Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="0gR3NHUd9Y7y7uj4vOEF" version="15.5.2" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="769" dy="696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1312" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -21,6 +21,17 @@
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="110" as="geometry" />
         </mxCell>
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55.00034482758605" y="90" as="sourcePoint" />
+            <mxPoint x="55" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="90" />
+              <mxPoint x="90" y="110" />
+              <mxPoint x="55" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-7" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="275" y="236" as="targetPoint" />
@@ -37,18 +48,6 @@
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WRocmoPPFgqxLy-m5w7Q-1">
           <mxGeometry x="45" y="140" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WRocmoPPFgqxLy-m5w7Q-4" value="ProjectIDの採番・制限値の保持" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="WRocmoPPFgqxLy-m5w7Q-1">
-          <mxGeometry x="0.1143" y="80" relative="1" as="geometry">
-            <mxPoint x="-185" y="96.00000000000023" as="sourcePoint" />
-            <mxPoint x="-185" y="116" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="-170" y="96" />
-              <mxPoint x="-160" y="96" />
-              <mxPoint x="-160" y="116" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-5" value="Project Quota作成" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="WRocmoPPFgqxLy-m5w7Q-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-185" y="140.0000000000001" as="sourcePoint" />
@@ -64,14 +63,11 @@
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-9" value="xfs_quota -x -c &#39;limit -p bhard 10g ${ProjectID}&#39; ${MountPath} 相当" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="670" y="220" width="205" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WRocmoPPFgqxLy-m5w7Q-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3nuBFxr9cyL0pnOWT2aG-5" target="3nuBFxr9cyL0pnOWT2aG-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-25" value="backend" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="400" width="100" height="300" as="geometry" />
         </mxCell>
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-26" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WRocmoPPFgqxLy-m5w7Q-25">
-          <mxGeometry x="45" y="70" width="10" height="130" as="geometry" />
+          <mxGeometry x="45" y="70" width="10" height="210" as="geometry" />
         </mxCell>
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-27" value="domain作成" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" edge="1" parent="WRocmoPPFgqxLy-m5w7Q-25" target="WRocmoPPFgqxLy-m5w7Q-26">
           <mxGeometry relative="1" as="geometry">
@@ -82,14 +78,14 @@
           <mxGeometry x="360" y="400" width="100" height="300" as="geometry" />
         </mxCell>
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-29" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WRocmoPPFgqxLy-m5w7Q-28">
-          <mxGeometry x="45" y="80" width="10" height="110" as="geometry" />
+          <mxGeometry x="45" y="80" width="10" height="190" as="geometry" />
         </mxCell>
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-30" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" edge="1" parent="1" source="WRocmoPPFgqxLy-m5w7Q-29" target="WRocmoPPFgqxLy-m5w7Q-26">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="275" y="556" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WRocmoPPFgqxLy-m5w7Q-31" value="Project Quota作成" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="1" source="WRocmoPPFgqxLy-m5w7Q-26" target="WRocmoPPFgqxLy-m5w7Q-29">
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-31" value="domain作成" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="1" source="WRocmoPPFgqxLy-m5w7Q-26" target="WRocmoPPFgqxLy-m5w7Q-29">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="275" y="480" as="sourcePoint" />
           </mxGeometry>
@@ -100,22 +96,25 @@
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-33" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WRocmoPPFgqxLy-m5w7Q-32">
           <mxGeometry x="45" y="140" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WRocmoPPFgqxLy-m5w7Q-34" value="ProjectIDの採番・制限値の保持" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="WRocmoPPFgqxLy-m5w7Q-32">
-          <mxGeometry x="0.1143" y="80" relative="1" as="geometry">
-            <mxPoint x="-185" y="96.00000000000023" as="sourcePoint" />
-            <mxPoint x="-185" y="116" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="-170" y="96" />
-              <mxPoint x="-160" y="96" />
-              <mxPoint x="-160" y="116" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="WRocmoPPFgqxLy-m5w7Q-35" value="Project Quota作成" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="WRocmoPPFgqxLy-m5w7Q-32">
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-35" value="HomeDir作成" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="WRocmoPPFgqxLy-m5w7Q-32">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-185" y="140.0000000000001" as="sourcePoint" />
             <mxPoint x="45" y="140.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-46" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WRocmoPPFgqxLy-m5w7Q-32">
+          <mxGeometry x="45" y="210" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-47" value="Project QuotaにHomeDirを追加" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="WRocmoPPFgqxLy-m5w7Q-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-185" y="210" as="sourcePoint" />
+            <mxPoint x="44.99999999999977" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-48" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" edge="1" parent="WRocmoPPFgqxLy-m5w7Q-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-186" y="240" as="targetPoint" />
+            <mxPoint x="44" y="240" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="WRocmoPPFgqxLy-m5w7Q-36" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" edge="1" parent="1">
@@ -124,11 +123,28 @@
             <mxPoint x="644" y="569.9999999999999" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WRocmoPPFgqxLy-m5w7Q-37" value="xfs_quota -x -c &#39;limit -p bhard 10g ${ProjectID}&#39; ${MountPath} 相当" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="670" y="540" width="205" height="30" as="geometry" />
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-37" value="xfs_quota -x -c &#39;project -s -p ${HomeDir} ${ProjectID}&#39; 相当" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="610" width="205" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WRocmoPPFgqxLy-m5w7Q-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WRocmoPPFgqxLy-m5w7Q-28" target="WRocmoPPFgqxLy-m5w7Q-28">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-42" value="ProjectID採番" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-43" value="ProjectID採番" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415.0003448275861" y="490.0000000000001" as="sourcePoint" />
+            <mxPoint x="415" y="510.0000000000001" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="450" y="490" />
+              <mxPoint x="450" y="510" />
+              <mxPoint x="415" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WRocmoPPFgqxLy-m5w7Q-45" value="Linux User作成" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="480" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
